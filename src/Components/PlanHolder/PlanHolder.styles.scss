@@ -1,0 +1,31 @@
+@import "../../Styles/_index.scss";
+
+.plan-holder {
+    @include display(flex, row, wrap, center);
+    margin: 26rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-text--black;
+
+    &__content {
+         margin:  0 0.7rem;
+        &--groups {
+            font-size: $fs-l;
+        }
+
+        &--price{
+            font-size: 7rem;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .plan-holder {
+        display: block;
+
+        &__content {
+            margin: 0;
+        }
+    }
+    
+}

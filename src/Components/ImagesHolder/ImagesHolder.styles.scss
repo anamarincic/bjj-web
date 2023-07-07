@@ -1,0 +1,40 @@
+@import "../../Styles/_index.scss";
+
+.images-holder {
+    height: 650px;
+    width: 100%;
+    @include display(flex, row, wrap, center);
+
+    &__content {
+        height: inherit;
+        flex-basis: 33.33%;
+        font-size: 20rem;
+        font-weight: 800;
+        color: transparent;
+        -webkit-text-stroke: 2px $color-text--grey-darker;
+        text-align:end;
+        & img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+            object-fit: cover;
+        }
+    }
+
+    & .overlay {
+        position: absolute; 
+        width: inherit; 
+        height: inherit; 
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 6; 
+      }
+}
+
+@media (max-width: 750px) {
+    .images-holder{
+        @include display(flex, column, nowrap, center);
+        height: auto;
+    }
+    
+}

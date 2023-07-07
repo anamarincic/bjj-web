@@ -1,9 +1,31 @@
-$color-background: white;
+$color-bg-primary:  #dcdad7;
+$color-bg-secondary: rgb(30, 33, 34);
+$color-bg-primary--darker: rgb(24, 26, 27);
+$bg--cyan-bluish-gray: #a9a59d;
+$bg--white: #dcdad7;
+$bg--vivid-red: #b53d3d;
+$bg--grey: #54595F;
+
+$color-border: #181a1b;
+
+$color-text--black: #181a1b;
+$color-text--grey: #7A7A7A;
+$color-text--grey-darker: rgba(98, 106, 110, 0.4);
 $color-text: white;
 
-
-$font-family: "Montserrat", sans-serif;
+//$font-family: "Montserrat", sans-serif;
+$font-family-heading : 'Finger Paint';
+$font-family-one: 'Viga', sans-serif;
+//$font-family: 'Gantari', sans-serif;
+$font-family: 'Varela Round', sans-serif;
 
 $size-radius-small: 8px;
 $size-radius-large: 100%;
 $size-rem: 1.6rem;
+
+$fs-xxl: clamp(2.3rem, 12vw + .1rem, 7rem);
+$fs-xl: 5rem;
+$fs-l: 3.5rem;
+$fs-m: 2rem;
+$fs-s: 1.6rem;
+$fs-xs: 1.2rem;

@@ -1,0 +1,140 @@
+@import "../../Styles/_index.scss";
+
+.description {
+    @include display(flex, column, nowrap, center);
+    align-items: center;
+    margin: 10rem auto;
+
+    &__title {
+        margin-bottom: 6rem;
+        text-transform: uppercase;
+        color: $color-text--black;
+        font-size: $fs-xl;
+    }  
+
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+
+        &-team{
+            margin-right: 10rem;
+            line-height: 0.2rem;
+            
+        }
+        &-img {
+            width: 400px;
+            height: 490px;
+        }
+    }
+}
+
+.team {
+    position: absolute;
+    transform-origin: 0 top;
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-left: 70px;
+
+    & .team__details {
+        text-transform: uppercase;
+        color: $color-text--black;
+        font-weight: 200;
+        font-size: $fs-xs;
+        height: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+
+    & .team__name{
+        color: $color-text--black;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        height: 2rem;
+    }
+}
+
+//desktops
+
+@media screen and (min-width: 970px) and (max-width: 1819px) {
+    .description {
+        text-align: center;
+        &__content {
+            @include display(flex, row, nowrap, space-evenly);
+            &-team:nth-child(1) {
+                margin-right: 40px;
+            }
+            &-team:nth-child(2) {
+                margin-right: 40px;
+            }
+            &-team:nth-last-child(1) {
+                margin-right: 0px;
+            }
+        }
+    }
+    .description__content-img {
+        width: 290px;
+        height: 290px;
+    }
+
+    .team {
+            position: relative;
+            transform: rotate(360deg);
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+}
+
+//tablets and small devices 
+
+@media screen and (min-width: 481px) and (max-width: 969px) {
+    .description__content {
+        @include display(flex, column, nowrap, center);
+        align-content: center;
+        &-team {
+            margin: 0;
+        }
+        &-img {
+            width: 350px;
+            height: 400px;
+        }
+    }
+
+        .team {
+            position: relative;
+            transform: rotate(360deg);
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+}
+
+//mobile screen 
+
+@media screen and (max-width: 480px) {
+    .description {
+        text-align: center;
+
+        .description__content {
+            margin: 0;
+            @include display(flex, column, nowrap, center);
+            text-align: center;
+
+            &-team {
+                margin: 0;
+
+                & .team {
+                    position: relative;
+                    transform-origin: 0 top;
+                    transform: rotate(360deg);
+                    margin-left: 0;
+                }
+            }
+
+            &-img {
+                width: 300px;
+                height: 390px;
+            }
+        }
+    }
+} 

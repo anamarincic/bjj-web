@@ -1,0 +1,59 @@
+@import "../../Styles/_index.scss";
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    height: 60%;
+
+    & tr {
+        color: black;
+        text-align: center;
+
+        & th {
+          background-color: rgb(246, 246, 246);
+          font-weight: lighter;
+          text-transform: uppercase;
+        }
+      }
+  }
+
+  .event_container {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  
+tr:nth-child(2n+1) {
+    background-color: $bg--cyan-bluish-gray;
+  }
+
+@media (max-width: 750px) {
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+.table-holder{
+  @include display(flex, column, wrap, stretch);
+  align-content: center;
+  height: 70vh;
+  padding-top: 20rem;
+ 
+  &__text {
+     color: black;
+     align-self: center;
+     text-transform: uppercase;
+     font-size: $fs-l;
+  }
+ }
+ 
+ @media (max-width: 750px) {
+     .table-holder {
+         display: flex;
+         flex-flow: column wrap;
+         height: auto;
+         padding: 0;
+     }
+     
+ }

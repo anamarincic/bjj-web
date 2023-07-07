@@ -1,0 +1,11 @@
+.info__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.info__footer {
+  position: relative;
+  bottom: -400px;
+}

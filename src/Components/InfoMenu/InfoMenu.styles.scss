@@ -1,0 +1,13 @@
+@import "../../Styles/_index.scss";
+
+
+.info__header {
+    @include display(flex, row, nowrap, space-around);
+    padding: 20px 0;
+    
+}
+
+.info__footer {
+    position: relative;
+    bottom: -400px;
+}

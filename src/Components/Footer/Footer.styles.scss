@@ -1,0 +1,15 @@
+@import "../../Styles/_index.scss";
+
+footer {
+    background-color: $color-bg-primary--darker;
+    @include display(flex, row, nowrap, space-evenly);
+
+    a {
+        color: white;
+        margin-right: 1rem;
+    }
+}
+
+.footer-title {
+    text-transform: uppercase;
+}

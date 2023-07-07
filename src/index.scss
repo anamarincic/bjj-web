@@ -1,14 +1,40 @@
 @import "./Styles/index";
 
+
   html {
     font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior:  smooth;
   }
   
   body {
-    background: $color-background;
+    background: $color-bg-primary;
     color: $color-text;
     font-size: $size-rem;
     font-family: $font-family;
     margin: 0px;
+    overflow-x: hidden;
   }
+
+  h2 {
+    animation: 2s anim-lineUp ease-out ;
+  }
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
   
+
