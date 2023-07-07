@@ -8,7 +8,7 @@ import { ImagesRandom } from "../../Components/ImagesRandom";
 import { Description } from "../../Components/Description";
 import { Footer } from "../../Components/Footer";
 import { BackToTopButton } from "../../Components/BackToTopButton";
-import video from "../../videos/video.mp4";
+import video from "../../videos/video2.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Home.styles.scss";
@@ -56,12 +56,7 @@ export function Home() {
         <div className="video-holder">
           {showVideo && (
             <div className="video-holder__play">
-              <video
-                src={video}
-                width="100%"
-                height="500"
-                autoPlay
-                muted></video>
+              <video src={video} width="100%" height="500" autoPlay></video>
               <div className="video-holder__close" onClick={closeVideo}>
                 <FontAwesomeIcon icon={faXmark} size="2xl" />
               </div>
