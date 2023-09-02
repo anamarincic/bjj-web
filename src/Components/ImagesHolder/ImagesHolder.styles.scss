@@ -31,7 +31,8 @@
       }
 }
 
-@media (max-width: 750px) {
+//mobile, tablets, iPads
+@media (max-width: 768px) {
     .images-holder{
         @include display(flex, column, nowrap, center);
         height: auto;

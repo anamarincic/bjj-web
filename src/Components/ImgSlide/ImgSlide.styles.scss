@@ -1,105 +1,143 @@
 @import "../../Styles/_index.scss";
 
-.imgSlide {
-    background-image: url("../../images/sliderOne.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    animation: changeImage 12s ease-in infinite;
-    text-align: center;
-    margin-top: 80px;
-    flex-basis: 100vh;
-    transition: all 1.2s ease;
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
+
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 5rem;
+  text-align: center;
+  background: none;
+}
+.react-slideshow-container .nav {
+  z-index: 2 !important;
+}
+
+.react-slideshow-container .default-nav {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.react-slideshow-container .nav:first-of-type{
+  left: 50px !important;
+}
+
+.react-slideshow-container .nav:last-of-type {
+  right: 50px !important;
+}
+
+.slideOne {
+  background-image:url("../../images/slider/sliderOne.jpg") ;
+}
   
-    &__text {
-      color: $color-text;
-      letter-spacing: 1.7rem;
-      font-weight: 800;
-      font-size: $fs-xxl;
-      margin: 0 auto;
-      animation: slideLeft 3s ease;
-    }
+.slideTwo {
+  background-image:url("../../images/slider/sliderTwo.jpg") ;
+}
+  
+.slideThree {
+  background-image:url("../../images/slider/sliderThree.jpg") ;
+}
+
+//small screens, laptops
+@media screen and (max-width: 1024px){
+  .slideOne {
+    background-image:url("../../images/slider/sliderOne750px.jpg") ;
+  }
     
+  .slideTwo {
+    background-image:url("../../images/slider/sliderTwo750px.jpg") ;
+  }
+    
+  .slideThree {
+    background-image:url("../../images/slider/sliderThree750px.jpg") ;
+  }
+}
+
+
+//iPads, Tablets
+
+@media screen and (min-width: 517px ) and (max-width: 768px) {
+
+  .react-slideshow-container .default-nav {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media screen and (min-width: 481px ) and (max-width: 516px) {
+  .each-slide-effect > div {
+    height: 60vh;
   }
 
+  .each-slide-effect span {
+    font-size: 4rem;
+  }
+
+  .react-slideshow-container .default-nav {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .react-slideshow-container .nav:first-of-type{
+    left: 30px !important;
+  }
   
-  @keyframes changeImage {
-      0% {
-          background-image: url("../../images/sliderOne1024px.jpg");
-          
-          
-      }
-      50% {
-          background-image: url("../../images/sliderTwo.jpg");
-          
-      }
-      75% {
-          background-image: url("../../images/sliderThree.jpg");
-          
-      }
-      100% {
-        background-image: url("../../images/sliderFour.jpg");
-        
-      }
-    }
-
-    @keyframes slideLeft {
-      from {
-        transform: translate(-1000px);
-      }
-      to {
-        transform: translate(0);
-      }
-    }
-
-
-@media screen and (min-width: 481px ) and (max-width: 750px) {
-  .imgSlide {
-    flex-basis: 60vh;
-  }
-  .imgSlide__text {
-    font-size: $fs-l;
-  }
-  @keyframes changeImage {
-    0% {
-        background-image: url("../../images/sliderOne750px.jpg");
-    }
-    25% {
-        background-image: url("../../images/sliderTwo750px.jpg");
-    }
-    50% {
-        background-image: url("../../images/sliderThree750px.jpg");
-    }
-    75% {
-      background-image: url("../../images/sliderFour.jpg");
-    }100% {
-      background-image: url("../../images/sliderFive.jpg");
-}
+  .react-slideshow-container .nav:last-of-type {
+    right: 30px !important;
   }
 }
+
+//mobile
 
 @media screen and (min-width: 400px ) and (max-width: 480px) {
-  .imgSlide {
-    flex-basis: 60vh;
+  .each-slide-effect > div {
+    height: 60vh;
+    background-size: 100% 100%;
   }
-  .imgSlide__text {
-    font-size: 38px;
-    letter-spacing: 0.7rem;;
+  .each-slide-effect span {
+    font-size: 2rem;
+  }
+  .react-slideshow-container .nav:first-of-type{
+    left: 30px !important;
+  }
+  
+  .react-slideshow-container .nav:last-of-type {
+    right: 30px !important;
+  }
+  .react-slideshow-container .default-nav {
+    width: 25px !important;
+    height: 25px !important;
   }
 }
 
 @media screen and (max-width: 399px) {
-  .imgSlide {
-    flex-basis: 50vh;
+  .each-slide-effect > div {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-  .imgSlide__text {
-    font-size: 27px;
-    letter-spacing: 0.7rem;
+  .each-slide-effect span {
+    font-size: 1.5rem;
+  }
+  .react-slideshow-container .default-nav {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .react-slideshow-container .nav:first-of-type{
+    left: 20px !important;
+  }
+  
+  .react-slideshow-container .nav:last-of-type {
+    right: 20px !important;
   }
 }
-
 
   

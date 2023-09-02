@@ -5,14 +5,16 @@ export function Hero() {
   return (
     <div className="hero" id="onama">
       <div className="hero__text">
-        <h2 className="hero__text-head">JJ UNIVERSUM</h2>
+        <h2 className="hero__text-head">
+          Kod nas se Jiu Jitsu ne uči, kod nas se Jiu Jitsu živi
+        </h2>
         <h3 className="hero__text-content">
-          Brazilski džiju-džicu naglašava tehnike borbe na tlu i predajnog hvata
-          (engl. submission hold) uključujući zglobne koštce i gušenja već
-          prisutna u mnogim drugim borilačkim vještinama s ili bez naglaska na
-          borbi na tlu. Premisa je da većina prednosti većeg i snažnijeg
-          protivnika dolazi od duljeg dohvata i snažnijih udaraca mogu biti
-          negirana ako borba bude na tlu.
+          Klub Universum je mjesto gdje se susreću entuzijasti ovog prekrasnog
+          brazilskog borilačkog sporta i zajedno stvaraju jedinstvenu, povezanu
+          i podržavajuću jiu jitsu zajednicu. Naša misija je pružiti vrhunsku
+          obuku Jiu Jitsua svim dobnim skupinama i razinama iskustva. Bez obzira
+          jeste li početnik koji tek ulazi u svijet Jiu Jitsua ili iskusni
+          natjecatelj, klub Universum nudi treninge prilagođene vašim potrebama.
         </h3>
       </div>
       <div className="hero__video">

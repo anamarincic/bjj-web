@@ -6,57 +6,108 @@ export function Table() {
       <h2 className="table-holder__text">
         Pronađi skupinu koja ti najbolja odgovara
       </h2>
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Pon</th>
-            <th>Uto</th>
-            <th>Sri</th>
-            <th>Čet</th>
-            <th>Pet</th>
-            <th>Sub</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>17:00-18:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td className="event_container">Open mat</td>
-          </tr>
-          <tr>
-            <td>18:00 - 19:00</td>
-            <td className="event_container">Djeca</td>
-            <td></td>
-            <td className="event_container">Djeca</td>
-            <td></td>
-            <td className="event_container">Djeca</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>19:00 - 20:00</td>
-            <td className="event_container">Seniori</td>
-            <td></td>
-            <td className="event_container">Seniori</td>
-            <td></td>
-            <td className="event_container">Seniori</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>20:00 - 21:00</td>
-            <td></td>
-            <td className="event_container">Juniori</td>
-            <td></td>
-            <td className="event_container">Juniori</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">ponedjeljak</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>18:00</span>
+              <span>-</span>
+              <span>19:00</span>
+            </div>
+            <div>Djeca</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>19:00</span>
+              <span>-</span>
+              <span>20:15</span>
+            </div>
+            <div>Seniori</div>
+          </li>
+        </ul>
+      </div>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">utorak</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>20:00</span>
+              <span>-</span>
+              <span>21:00</span>
+            </div>
+            <div>Juniori</div>
+          </li>
+        </ul>
+      </div>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">srijeda</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>18:00</span>
+              <span>-</span>
+              <span>19:00</span>
+            </div>
+            <div>Djeca</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>19:00</span>
+              <span>-</span>
+              <span>20:15</span>
+            </div>
+            <div>Seniori</div>
+          </li>
+        </ul>
+      </div>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">četvrtak</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>20:00</span>
+              <span>-</span>
+              <span>21:00</span>
+            </div>
+            <div>Juniori</div>
+          </li>
+        </ul>
+      </div>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">petak</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>18:00</span>
+              <span>-</span>
+              <span>19:00</span>
+            </div>
+            <div>Djeca</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>19:00</span>
+              <span>-</span>
+              <span>20:15</span>
+            </div>
+            <div>Seniori</div>
+          </li>
+        </ul>
+      </div>
+      <div className="table-holder__content">
+        <h3 className="table-holder__content-header">subota</h3>
+        <ul className="table-holder__content-event">
+          <li className="table-holder__content-value">
+            <div>
+              <span>17:00</span>
+              <span>-</span>
+              <span>18:00</span>
+            </div>
+            <div>Open mat</div>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

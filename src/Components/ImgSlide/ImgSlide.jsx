@@ -1,11 +1,25 @@
 import "./ImgSlide.styles.scss";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 export function ImgSlide() {
   return (
-    <div className="imgSlide">
-      <h2 className="imgSlide__text">
-        DISCIPLINA I <br /> SAMOOBRANA
-      </h2>
-    </div>
+    <Slide>
+      <div className="each-slide-effect">
+        <div className="slideOne">
+          <span>DISCIPLINA</span>
+        </div>
+      </div>
+      <div className="each-slide-effect">
+        <div className="slideTwo">
+          <span>IZDRŽLJIVOST</span>
+        </div>
+      </div>
+      <div className="each-slide-effect">
+        <div className="slideThree">
+          <span>SNAGA</span>
+        </div>
+      </div>
+    </Slide>
   );
 }

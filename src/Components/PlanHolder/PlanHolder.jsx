@@ -5,7 +5,7 @@ export function PlanHolder() {
     <div className="plan-holder">
       <div className="plan-holder__content">
         <img
-          src={require("../../images/plan01.jpg")}
+          src={require("../../images/plan/planHolderImg01.jpg")}
           alt=""
           width="100%"
           height="300px"
@@ -16,7 +16,7 @@ export function PlanHolder() {
       </div>
       <div className="plan-holder__content">
         <img
-          src={require("../../images/sliderFive.jpg")}
+          src={require("../../images/plan/planHolderImg02.jpg")}
           alt=""
           width="100%"
           height="300px"
@@ -27,7 +27,7 @@ export function PlanHolder() {
       </div>
       <div className="plan-holder__content">
         <img
-          src={require("../../images/sliderFour.jpg")}
+          src={require("../../images/plan/planHolderImg03.jpg")}
           alt=""
           width="100%"
           height="300px"

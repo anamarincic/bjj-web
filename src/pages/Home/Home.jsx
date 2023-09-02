@@ -8,7 +8,7 @@ import { ImagesRandom } from "../../Components/ImagesRandom";
 import { Description } from "../../Components/Description";
 import { Footer } from "../../Components/Footer";
 import { BackToTopButton } from "../../Components/BackToTopButton";
-import video from "../../videos/video2.mp4";
+import video from "../../videos/video.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Home.styles.scss";
@@ -56,7 +56,12 @@ export function Home() {
         <div className="video-holder">
           {showVideo && (
             <div className="video-holder__play">
-              <video src={video} width="100%" height="500" autoPlay></video>
+              <video
+                src={video}
+                width="100%"
+                height="500"
+                autoPlay
+                muted></video>
               <div className="video-holder__close" onClick={closeVideo}>
                 <FontAwesomeIcon icon={faXmark} size="2xl" />
               </div>
@@ -72,10 +77,15 @@ export function Home() {
         <PlanHolder />
         <ImagesRandom />
         <Description />
-        <div id="info" className="formContent">
-          <div className="form-one">
-            <h2>Pitaj nas što te zanima..</h2>
-            <p>Naš mail: universumbjjosijek@gmail.com</p>
+        <div id="info" className="quotesContent">
+          <div className="quote">
+            <h2>
+              Iskusite snagu, tehnike i ljepotu ovog izvanrednog borilačkog
+              sporta i krenite na put prema osobnom razvoju i
+              samopouzdanju.Imate li bilo kakva pitanja ili želite saznati više,
+              slobodno nas kontaktirajte. Veselimo se što ćemo vas upoznati i
+              biti dio vaše Jiu Jitsu priče.
+            </h2>
           </div>
         </div>
       </main>

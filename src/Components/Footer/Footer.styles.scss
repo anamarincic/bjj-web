@@ -3,6 +3,7 @@
 footer {
     background-color: $color-bg-primary--darker;
     @include display(flex, row, nowrap, space-evenly);
+    padding: 15px;
 
     a {
         color: white;
@@ -13,3 +14,50 @@ footer {
 .footer-title {
     text-transform: uppercase;
 }
+
+@media  screen and (min-width: 769px) {
+    .footer__maps {
+        padding: 10px;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+}
+
+@media  screen and (max-width: 768px) {
+    footer {
+        display: block;
+        padding-left: 50px;
+        padding-bottom: 10px;
+
+        a {
+            margin-right: 2rem;
+        }
+    }
+    footer > div {
+       padding-top: 10px;
+       margin-bottom: 40px;
+    }  
+    .footer-icon {
+        @include display(flex, row, wrap, flex-start);
+    }
+    .iconTag {
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+    iframe {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    iframe {
+        width: 200px;
+        height: 150px;
+    }
+    
+}
+

@@ -43,14 +43,6 @@ header {
 }
 
 
-
-@media (max-width: 750px) {
-    .text-holder{
-        display: none;
-        overflow-x: hidden;
-    } 
-}
-
 .video-holder {
     background-image: url("../../images/bjj-dvorana.jpeg");
     background-size: cover;
@@ -80,13 +72,13 @@ header {
           background-color: black;
           top:0;
           left:0; 
-          z-index: 5; 
+          z-index: 10; 
           position: fixed; 
           opacity: 0.85;
         }
 
        & video {
-         z-index: 6;
+         z-index: 11;
          position: absolute;
          left: 0;
         }
@@ -96,7 +88,7 @@ header {
         width: 100px;
         height: 100px;
         color: white;
-        z-index: 8;
+        z-index: 12;
         position: absolute;
         right: 150px;
     }
@@ -116,29 +108,70 @@ header {
     font-size: $fs-m;
 }
 
-.formContent {
+.quotesContent {
     @include display(flex, row, nowrap, center); 
-    margin: 20rem 30rem 10rem 30rem;
+    margin: 8rem 0 10rem 0;
 
-    & .form-one {
+    & .quote {
         flex-basis: 50%;
         text-align: center;
-        padding-top: 5rem;
      & h2 {
         text-transform: uppercase;
         color: $color-text--black;
         font-size: $fs-l;
      }
-     & p {
-        color: $color-text--black;
-     }
     }
 }
 
-@media (max-width: 750px) {
-    .formContent{
+@media (max-width: 1899px) {
+    .text-holder{
+        display: none;
+        overflow-x: hidden;
+    } 
+}
+
+//laptops, small screen
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .quotesContent{
         display: block;
-        margin: 0
+        margin: 5rem 4rem;
+
+        & .quote {
+            padding: 5px;
+            & h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//iPads, tablets
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .quotesContent{
+        display: block;
+        margin: 5rem 4rem;
+
+        & .quote {
+            padding: 5px;
+            & h2 {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+//mobile
+@media screen and  (max-width: 480px) {
+    .quotesContent{
+        display: block;
+        margin: 5rem 4rem;
+
+        & .quote {
+            padding: 5px;
+            & h2 {
+                font-size: 15px;
+            }
+        }
     }
 }
 

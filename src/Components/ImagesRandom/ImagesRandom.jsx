@@ -4,22 +4,22 @@ export function ImagesRandom() {
   return (
     <div className="images-random">
       <div className="images-random__content">
-        <img src={require("../../images/randomOne.jpg")} alt=" " />
+        <img src={require("../../images/random/randomOne.jpg")} alt=" " />
       </div>
       <div className="images-random__content wide">
-        <img src={require("../../images/randomTwo.jpg")} alt=" " />
+        <img src={require("../../images/random/randomTwo.jpg")} alt=" " />
       </div>
       <div className="images-random__content">
-        <img src={require("../../images/randomThree.jpg")} alt=" " />
+        <img src={require("../../images/random/randomThree.jpg")} alt=" " />
       </div>
       <div className="images-random__content wide">
-        <img src={require("../../images/randomFour.jpg")} alt=" " />
+        <img src={require("../../images/random/randomFour.jpg")} alt=" " />
       </div>
       <div className="images-random__content">
-        <img src={require("../../images/randomFive.jpg")} alt=" " />
+        <img src={require("../../images/random/randomFive.jpg")} alt=" " />
       </div>
       <div className="images-random__content ">
-        <img src={require("../../images/randomSix.jpg")} alt=" " />
+        <img src={require("../../images/random/randomSix.jpg")} alt=" " />
       </div>
     </div>
   );

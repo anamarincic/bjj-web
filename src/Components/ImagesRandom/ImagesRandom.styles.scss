@@ -19,7 +19,8 @@
     }  
 }
 
-@media (max-width: 600px) {
+//mobile, iPads, tablets
+@media (max-width: 768px) {
    .images-random {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
    }  

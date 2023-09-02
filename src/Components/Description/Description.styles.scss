@@ -3,7 +3,8 @@
 .description {
     @include display(flex, column, nowrap, center);
     align-items: center;
-    margin: 10rem auto;
+    margin: 10rem auto 0 auto;
+    
 
     &__title {
         margin-bottom: 6rem;
@@ -25,6 +26,7 @@
         &-img {
             width: 400px;
             height: 490px;
+            object-fit: cover;
         }
     }
 }
@@ -55,7 +57,7 @@
 
 //desktops
 
-@media screen and (min-width: 970px) and (max-width: 1819px) {
+@media screen and (min-width: 1025px) and (max-width: 1819px){
     .description {
         text-align: center;
         &__content {
@@ -74,6 +76,7 @@
     .description__content-img {
         width: 290px;
         height: 290px;
+        object-position: 100% 35%;
     }
 
     .team {
@@ -85,9 +88,9 @@
         }
 }
 
-//tablets and small devices 
+//tablets, iPads, small screens and laptops
 
-@media screen and (min-width: 481px) and (max-width: 969px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
     .description__content {
         @include display(flex, column, nowrap, center);
         align-content: center;

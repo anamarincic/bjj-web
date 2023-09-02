@@ -7,7 +7,7 @@ export function Description() {
       <div className="description__content">
         <div className="description__content-team">
           <img
-            src={require("../../images/trener1.jpg")}
+            src={require("../../images/description/trener1.jpg")}
             alt=""
             className="description__content-img"
           />
@@ -18,7 +18,7 @@ export function Description() {
         </div>
         <div className="description__content-team">
           <img
-            src={require("../../images/trener2.jpg")}
+            src={require("../../images/description/trener2.jpg")}
             alt=""
             className="description__content-img"
           />
@@ -29,7 +29,7 @@ export function Description() {
         </div>
         <div className="description__content-team">
           <img
-            src={require("../../images/trener3.jpg")}
+            src={require("../../images/description/trener3.jpg")}
             alt=""
             className="description__content-img"
           />
