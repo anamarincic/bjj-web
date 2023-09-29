@@ -1,4 +1,3 @@
-import video from "../../videos/video.mp4";
 import "./Hero.styles.scss";
 
 export function Hero() {
@@ -18,7 +17,12 @@ export function Hero() {
         </h3>
       </div>
       <div className="hero__video">
-        <video src={video} height="500" controls muted></video>
+        <iframe
+          src="https://www.youtube.com/embed/8xFlxDyPWrw?si=EAmTrg_07t0a6ndV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </div>
   );

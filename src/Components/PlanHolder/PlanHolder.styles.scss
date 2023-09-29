@@ -2,7 +2,7 @@
 
 .plan-holder {
     @include display(flex, row, wrap, center);
-    margin: 26rem auto;
+    margin: 20rem auto;
     text-align: center;
     text-transform: uppercase;
     color: $color-text--black;
@@ -16,6 +16,16 @@
         &--price{
             font-size: 7rem;
         }
+
+        &--sale {
+            text-transform: lowercase;
+        }
+
+        .price-sale {
+            margin-bottom: 0px;
+        }
+
+        
     }
 }
 
@@ -26,6 +36,9 @@
 
         &__content {
             margin: 0;
+            &--sale{
+                margin-bottom: 70px;
+            }
         }
     }
     

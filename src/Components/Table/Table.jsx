@@ -23,7 +23,15 @@ export function Table() {
               <span>-</span>
               <span>20:15</span>
             </div>
-            <div>Seniori</div>
+            <div>Napredna grupa</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>20:15</span>
+              <span>-</span>
+              <span>21:30</span>
+            </div>
+            <div>Početnici</div>
           </li>
         </ul>
       </div>
@@ -32,11 +40,11 @@ export function Table() {
         <ul className="table-holder__content-event">
           <li className="table-holder__content-value">
             <div>
-              <span>20:00</span>
+              <span>19:00</span>
               <span>-</span>
-              <span>21:00</span>
+              <span>20:15</span>
             </div>
-            <div>Juniori</div>
+            <div>MMA</div>
           </li>
         </ul>
       </div>
@@ -57,7 +65,15 @@ export function Table() {
               <span>-</span>
               <span>20:15</span>
             </div>
-            <div>Seniori</div>
+            <div>Napredna grupa</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>20:15</span>
+              <span>-</span>
+              <span>21:30</span>
+            </div>
+            <div>Početnici</div>
           </li>
         </ul>
       </div>
@@ -66,11 +82,11 @@ export function Table() {
         <ul className="table-holder__content-event">
           <li className="table-holder__content-value">
             <div>
-              <span>20:00</span>
+              <span>19:00</span>
               <span>-</span>
-              <span>21:00</span>
+              <span>20:15</span>
             </div>
-            <div>Juniori</div>
+            <div>MMA</div>
           </li>
         </ul>
       </div>
@@ -91,7 +107,15 @@ export function Table() {
               <span>-</span>
               <span>20:15</span>
             </div>
-            <div>Seniori</div>
+            <div>Napredna grupa</div>
+          </li>
+          <li className="table-holder__content-value">
+            <div>
+              <span>20:15</span>
+              <span>-</span>
+              <span>21:30</span>
+            </div>
+            <div>Početnici</div>
           </li>
         </ul>
       </div>

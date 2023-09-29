@@ -19,6 +19,12 @@
     }  
 }
 
+@media (min-width: 2200px) {
+    .images-random {
+        grid-template-columns: repeat(3,auto); 
+       }
+}
+
 //mobile, iPads, tablets
 @media (max-width: 768px) {
    .images-random {

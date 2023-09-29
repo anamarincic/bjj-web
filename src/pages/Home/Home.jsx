@@ -8,25 +8,32 @@ import { ImagesRandom } from "../../Components/ImagesRandom";
 import { Description } from "../../Components/Description";
 import { Footer } from "../../Components/Footer";
 import { BackToTopButton } from "../../Components/BackToTopButton";
-import video from "../../videos/video.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Home.styles.scss";
 import { useState } from "react";
+import ReactPlayer from "react-player";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+//import { useRef } from "react";
+//import { useEffect } from "react";
 
 export function Home() {
   const [showVideo, setShowVideo] = useState(false);
+
   const playVideo = (e) => {
     console.log(e);
     setShowVideo(true);
+    document.getElementById("video").focus({ preventScroll: true });
   };
 
   const closeVideo = () => {
     setShowVideo(false);
   };
 
+  showVideo ? disableBodyScroll(document) : enableBodyScroll(document);
+
   return (
-    <div>
+    <div className="app">
       <header id="naslovna">
         <Menu />
         <ImgSlide />
@@ -54,25 +61,30 @@ export function Home() {
         <ImagesHolder />
         <Table />
         <div className="video-holder">
-          {showVideo && (
-            <div className="video-holder__play">
-              <video
-                src={video}
-                width="100%"
-                height="500"
-                autoPlay
-                muted></video>
-              <div className="video-holder__close" onClick={closeVideo}>
-                <FontAwesomeIcon icon={faXmark} size="2xl" />
+          <span>
+            {!showVideo && (
+              <FontAwesomeIcon
+                icon={faCirclePlay}
+                size="2xl"
+                className="video-holder__icon"
+                onClick={playVideo}
+              />
+            )}
+            {showVideo ? (
+              <div className="video-holder__play">
+                <ReactPlayer
+                  className="video-holder__play-video"
+                  url="https://youtu.be/C-Wo1qmlhpI?si=miO-Wm6yvQF4Z83q"
+                  controls={true}
+                  id="video"
+                  playing={true}
+                />
+                <div className="video-holder__close" onClick={closeVideo}>
+                  <FontAwesomeIcon icon={faXmark} size="2xl" />
+                </div>
               </div>
-            </div>
-          )}
-          <FontAwesomeIcon
-            icon={faCirclePlay}
-            size="2xl"
-            className="video-holder__icon"
-            onClick={playVideo}
-          />
+            ) : null}
+          </span>
         </div>
         <PlanHolder />
         <ImagesRandom />
@@ -80,11 +92,9 @@ export function Home() {
         <div id="info" className="quotesContent">
           <div className="quote">
             <h2>
-              Iskusite snagu, tehnike i ljepotu ovog izvanrednog borilačkog
-              sporta i krenite na put prema osobnom razvoju i
-              samopouzdanju.Imate li bilo kakva pitanja ili želite saznati više,
-              slobodno nas kontaktirajte. Veselimo se što ćemo vas upoznati i
-              biti dio vaše Jiu Jitsu priče.
+              "Learn Gracie Jiu-Jitsu so that when a giant walks by, you don't
+              think to yourself 'oh,no' you think to yourself 'how intersting!'"
+              -Rener Gracie
             </h2>
           </div>
         </div>

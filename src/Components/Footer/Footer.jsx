@@ -28,16 +28,16 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div>
-        <h3>Lokacija</h3>
-        <h4>Osijek</h4>
-        <p>Prolaz Josipa Leovca 3</p>
-      </div>
       <div className="">
         <h3>Radno vrijeme</h3>
         <p>Svaki radni dan: 8:00 - 21:00</p>
         <p>Subota: 8:00 - 19:00</p>
         <p>Nedjelja: ne radimo</p>
+      </div>
+      <div>
+        <h3>Lokacija</h3>
+        <h4>Osijek</h4>
+        <p>Prolaz Josipa Leovića 3</p>
       </div>
       <div className="footer__maps">
         <iframe

@@ -35,7 +35,7 @@ export function Description() {
           />
           <div className="team">
             <p className="team__details">Trener djece</p>
-            <h3 className="team__name">Antonio Petrić</h3>
+            <h3 className="team__name">Siniša Vidaković</h3>
           </div>
         </div>
       </div>
