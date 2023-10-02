@@ -1,0 +1,127 @@
+.description {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto 0 auto;
+}
+.description__title {
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  color: #181a1b;
+  font-size: 5rem;
+}
+.description__content {
+  display: flex;
+  flex-flow: row wrap;
+}
+.description__content-team {
+  margin-right: 10rem;
+  line-height: 0.2rem;
+}
+.description__content-img {
+  width: 400px;
+  height: 490px;
+  object-fit: cover;
+}
+
+.team {
+  position: absolute;
+  transform-origin: 0 top;
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-left: 70px;
+}
+.team .team__details {
+  text-transform: uppercase;
+  color: #181a1b;
+  font-weight: 200;
+  font-size: 1.2rem;
+  height: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.team .team__name {
+  color: #181a1b;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  height: 2rem;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1819px) {
+  .description {
+    text-align: center;
+  }
+  .description__content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  .description__content-team:nth-child(1) {
+    margin-right: 40px;
+  }
+  .description__content-team:nth-child(2) {
+    margin-right: 40px;
+  }
+  .description__content-team:nth-last-child(1) {
+    margin-right: 0px;
+  }
+  .description__content-img {
+    width: 290px;
+    height: 290px;
+    object-position: 100% 35%;
+  }
+  .team {
+    position: relative;
+    transform: rotate(360deg);
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .description__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .description__content-team {
+    margin: 0;
+  }
+  .description__content-img {
+    width: 350px;
+    height: 400px;
+  }
+  .team {
+    position: relative;
+    transform: rotate(360deg);
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .description {
+    text-align: center;
+  }
+  .description .description__content {
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .description .description__content-team {
+    margin: 0;
+  }
+  .description .description__content-team .team {
+    position: relative;
+    transform-origin: 0 top;
+    transform: rotate(360deg);
+    margin-left: 0;
+  }
+  .description .description__content-img {
+    width: 300px;
+    height: 390px;
+  }
+}

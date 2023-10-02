@@ -1,27 +1,91 @@
 header {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  height: 100vh;
 }
 
+@media screen and (max-width: 750px) {
+  header {
+    height: auto;
+  }
+}
 .text-holder {
-  height: 50rem;
+  height: 40rem;
   background-color: rgb(24, 26, 27);
-  padding: 60px 0 30px 70px;
+  padding: 30px 0 20px 70px;
   overflow: hidden;
 }
 
 .row-bg-text {
   line-height: 1;
   text-align: center;
-  margin-left: -110px;
+  margin-left: -200px;
+}
+.row-bg-text.info {
+  transform: rotate(90deg);
+  position: relative;
 }
 
 .bg-text {
   font-weight: 800;
   color: transparent;
   -webkit-text-stroke: 0.7px rgba(98, 106, 110, 0.4);
-  font-size: 38rem;
+  font-size: 41rem;
+  font-family: "Montserrat", sans-serif;
+}
+.bg-text.info {
+  font-size: 22rem;
+}
+
+.video-holder {
+  background-image: url("../../images/bjj-dvorana.jpg");
+  background-size: cover;
+  height: 65rem;
+  text-align: center;
+}
+.video-holder__icon {
+  position: relative;
+  top: 35rem;
+  height: 100px;
+}
+.video-holder__icon:hover {
+  color: grey;
+}
+.video-holder__play {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.19);
+  backdrop-filter: blur(6px);
+  opacity: 1;
+  z-index: 100;
+}
+.video-holder__play-video {
+  z-index: 11;
+  width: 800px !important;
+  height: 450px !important;
+}
+.video-holder__play-video iframe {
+  width: inherit;
+  height: inherit;
+}
+.video-holder__close {
+  color: black;
+  z-index: 12;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  padding-top: 2px;
+  margin-bottom: 10px;
 }
 
 .widget {
@@ -39,3 +103,94 @@ header {
   font-size: 2rem;
 }
 
+.quotesContent {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 8rem 0 10rem 0;
+}
+.quotesContent .quote {
+  flex-basis: 50%;
+  text-align: center;
+}
+.quotesContent .quote h2 {
+  text-transform: uppercase;
+  color: #181a1b;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 1899px) {
+  .text-holder {
+    display: none;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .quotesContent {
+    display: block;
+    margin: 5rem 4rem;
+  }
+  .quotesContent .quote {
+    padding: 5px;
+  }
+  .quotesContent .quote h2 {
+    font-size: 20px;
+  }
+  .video-holder__play-video {
+    width: 600px !important;
+    height: 450px !important;
+  }
+  .video-holder__close {
+    width: 30px;
+    height: 30px;
+  }
+  .video-holder__close .fa-2xl {
+    font-size: 3rem !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .quotesContent {
+    display: block;
+    margin: 5rem 4rem;
+  }
+  .quotesContent .quote {
+    padding: 5px;
+  }
+  .quotesContent .quote h2 {
+    font-size: 17px;
+  }
+  .video-holder__play-video {
+    width: 400px !important;
+    height: 350px !important;
+  }
+  .video-holder__close {
+    width: 30px;
+    height: 30px;
+  }
+  .video-holder__close .fa-2xl {
+    font-size: 3rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .quotesContent {
+    display: block;
+    margin: 5rem 4rem;
+  }
+  .quotesContent .quote {
+    padding: 5px;
+  }
+  .quotesContent .quote h2 {
+    font-size: 15px;
+  }
+  .video-holder__play-video {
+    width: 300px !important;
+    height: 250px !important;
+  }
+  .video-holder__close {
+    width: 25px;
+    height: 25px;
+  }
+  .video-holder__close .fa-2xl {
+    font-size: 2rem !important;
+  }
+}

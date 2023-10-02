@@ -1,1 +1,1 @@
-html{font-size:62.5%;box-sizing:border-box}body{background:#c7c4bf;color:#fff;font-size:1.6rem;font-family:"Montserrat",sans-serif;margin:0px}
+html{font-size:62.5%;box-sizing:border-box;scroll-behavior:smooth}body{background:#dcdad7;color:#fff;font-size:1.6rem;font-family:"Varela Round",sans-serif;margin:0px;overflow-x:hidden}h2{animation:2s anim-lineUp ease-out}@keyframes anim-lineUp{0%{opacity:0;transform:translateY(80%)}20%{opacity:0}50%{opacity:1;transform:translateY(0%)}100%{opacity:1;transform:translateY(0%)}}
