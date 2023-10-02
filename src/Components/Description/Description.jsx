@@ -8,7 +8,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener1.jpg")}
-            alt=""
+            alt="trener jjk universum"
             className="description__content-img"
           />
           <div className="team">
@@ -19,7 +19,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener2.jpg")}
-            alt=""
+            alt="trener dva jjk universum"
             className="description__content-img"
           />
           <div className="team">
@@ -30,7 +30,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener3.jpg")}
-            alt=""
+            alt="trener tri jjk universum"
             className="description__content-img"
           />
           <div className="team">
