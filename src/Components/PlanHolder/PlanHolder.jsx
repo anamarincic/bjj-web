@@ -16,7 +16,7 @@ export function PlanHolder() {
       </div>
       <div className="plan-holder__content">
         <img
-          src={require("../../images/plan/planHolderImg03.jpg")}
+          src={require("../../images/plan/planHolderImg02.jpg")}
           alt=""
           width="100%"
           height="300px"

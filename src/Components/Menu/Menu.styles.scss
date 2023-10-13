@@ -71,6 +71,7 @@
 
 @media (max-width: 768px) {
   .navbar {
+    height: 10%;
     & .nav-menu {
       position: fixed;
       width: 100%;
@@ -120,13 +121,14 @@
 
 @media screen and (max-width: 480px) {
   .navbar {
+    height: 7.5%;
     .fas {
       font-size: 25px;
     }
   }
 
-  .icon {
-   width: 90px;
-   height: 90px;
+  .logo_icon {
+    width: 90px;
+    height: 90px;
   }
 }

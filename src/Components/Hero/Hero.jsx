@@ -1,11 +1,12 @@
 import "./Hero.styles.scss";
+import ReactPlayer from "react-player";
 
 export function Hero() {
   return (
     <div className="hero" id="onama">
       <div className="hero__text">
         <h2 className="hero__text-head">
-          Kod nas se Jiu Jitsu ne uči, kod nas se Jiu Jitsu živi
+          Kod nas se Jiu Jitsu ne uči, <br></br> kod nas se Jiu Jitsu živi
         </h2>
         <h3 className="hero__text-content">
           Klub Universum je mjesto gdje se susreću entuzijasti ovog prekrasnog
@@ -17,13 +18,21 @@ export function Hero() {
         </h3>
       </div>
       <div className="hero__video">
-        <iframe
-          src="https://www.youtube.com/embed/8xFlxDyPWrw?si=EAmTrg_07t0a6ndV"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <ReactPlayer
+          className="hero__video-play"
+          url="https://youtu.be/KcxgmDS7Z_0?si=DNpQAqLbSYsEiQFg"
+          controls={true}
+          id="video"
+          playing={true}
+        />
       </div>
     </div>
   );
 }
+
+///<iframe
+//src="https://youtu.be/KcxgmDS7Z_0?si=DNpQAqLbSYsEiQFg"
+//title="YouTube video player"
+//frameborder="0"
+//allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+//allowfullscreen></iframe>

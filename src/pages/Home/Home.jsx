@@ -74,7 +74,7 @@ export function Home() {
               <div className="video-holder__play">
                 <ReactPlayer
                   className="video-holder__play-video"
-                  url="https://youtu.be/C-Wo1qmlhpI?si=miO-Wm6yvQF4Z83q"
+                  url="https://youtu.be/2R68uY0CSPY?si=6FxcaZ9Ia3gAHOI2"
                   controls={true}
                   id="video"
                   playing={true}
@@ -92,9 +92,9 @@ export function Home() {
         <div id="info" className="quotesContent">
           <div className="quote">
             <h2>
-              "Learn Gracie Jiu-Jitsu so that when a giant walks by, you don't
-              think to yourself 'oh,no' you think to yourself 'how intersting!'"
-              -Rener Gracie
+              "Learn Jiu-Jitsu so that when a giant walks by, you don't think to
+              yourself 'oh,no' you think to yourself 'how intersting!'"
+              <br></br>- Rener Gracie
             </h2>
           </div>
         </div>
