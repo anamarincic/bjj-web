@@ -47,6 +47,7 @@ header {
 .video-holder {
     background-image: url("../../images/bjj-dvorana.jpg");
     background-size: cover;
+    background-position: center;
     height: 65rem;
     text-align: center;
 
@@ -160,6 +161,7 @@ header {
     }
 
     .video-holder {
+        background-image: url("../../images/bjj-dvorana-800px.jpg");
         &__play {
             &-video {
                 width: 600px !important;
@@ -199,6 +201,7 @@ header {
     }
 
     .video-holder {
+        background-image: url("../../images/bjj-dvorana-800px.jpg");
         &__play {
             &-video {
                 width: 400px !important;
@@ -239,6 +242,7 @@ header {
         }
     
         .video-holder {
+            background-image: url("../../images/bjj-dvorana-800px.jpg");
             &__play {
                 &-video {
                     width: 300px !important;
