@@ -16,13 +16,24 @@
   text-align: center;
   background: none;
 }
-.react-slideshow-container .nav {
-  z-index: 2 !important;
+
+.buttonStyle {
+  width: 60px;
+  background: none;
+  border: 1px solid grey;
+  border-radius: 60%;
+  padding: 12px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+};
+
+.buttonStyle:active {
+  color: red;
 }
 
-.react-slideshow-container .default-nav {
-  width: 50px !important;
-  height: 50px !important;
+.react-slideshow-container .nav {
+  z-index: 2 !important;
 }
 
 .react-slideshow-container .nav:first-of-type{
@@ -65,9 +76,11 @@
 
 @media screen and (min-width: 517px ) and (max-width: 768px) {
 
-  .react-slideshow-container .default-nav {
-    width: 40px !important;
-    height: 40px !important;
+  .buttonStyle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 25px;
   }
 }
 
@@ -80,9 +93,11 @@
     font-size: 4rem;
   }
 
-  .react-slideshow-container .default-nav {
-    width: 35px !important;
-    height: 35px !important;
+  .buttonStyle {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 20px;
   }
 
   .react-slideshow-container .nav:first-of-type{
@@ -104,16 +119,20 @@
   .each-slide-effect span {
     font-size: 2.5rem;
   }
+
+  .buttonStyle {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-size: 15px;
+  }
+
   .react-slideshow-container .nav:first-of-type{
     left: 30px !important;
   }
   
   .react-slideshow-container .nav:last-of-type {
     right: 30px !important;
-  }
-  .react-slideshow-container .default-nav {
-    width: 25px !important;
-    height: 25px !important;
   }
 }
 
@@ -126,9 +145,11 @@
   .each-slide-effect span {
     font-size: 2rem;
   }
-  .react-slideshow-container .default-nav {
-    width: 20px !important;
-    height: 20px !important;
+  .buttonStyle {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    padding: 0;
   }
 
   .react-slideshow-container .nav:first-of-type{
