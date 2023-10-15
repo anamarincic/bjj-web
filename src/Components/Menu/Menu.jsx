@@ -11,7 +11,9 @@ export function Menu() {
 
   return (
     <div className="navbar">
-      <Logo className="logo_icon" />
+      <a href="#naslovna">
+        <Logo className="logo_icon" />
+      </a>
       <span>
         <i
           className={sideBar ? "fas fa-times" : "fas fa-bars"}

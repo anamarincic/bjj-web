@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer>
       <div>
-        <h3 className="footer-title">Universum Jiu Jitsu</h3>
+        <h3 className="footer-title">Jiu Jitsu Universum</h3>
         <h3>Pronađi nas</h3>
         <div className="footer-icon">
           <a
@@ -30,8 +30,8 @@ export function Footer() {
       </div>
       <div className="">
         <h3>Radno vrijeme</h3>
-        <p>Svaki radni dan: 8:00 - 21:00</p>
-        <p>Subota: 8:00 - 19:00</p>
+        <p>Svaki radni dan: 18:00 - 21:30</p>
+        <p>Subota: 17:00 - 18:00</p>
         <p>Nedjelja: ne radimo</p>
       </div>
       <div>

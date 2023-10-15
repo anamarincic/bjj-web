@@ -99,7 +99,7 @@ export function Home() {
       </main>
       <Footer />
       <div className="copyright">
-        <p>Copyright &copy 2023 Jiu Jitsu Universum</p>
+        <p>Copyright &copy; 2023 Jiu Jitsu Universum</p>
       </div>
       <BackToTopButton />
     </div>

@@ -14,7 +14,8 @@ export function Hero() {
           i podržavajuću jiu jitsu zajednicu. Naša misija je pružiti vrhunsku
           obuku Jiu Jitsua svim dobnim skupinama i razinama iskustva. Bez obzira
           jeste li početnik koji tek ulazi u svijet Jiu Jitsua ili iskusni
-          natjecatelj, klub Universum nudi treninge prilagođene vašim potrebama.
+          natjecatelj, klub Universum u Osijeku nudi treninge prilagođene vašim
+          potrebama.
         </h3>
       </div>
       <div className="hero__video">
