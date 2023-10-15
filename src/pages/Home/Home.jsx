@@ -98,6 +98,9 @@ export function Home() {
         </div>
       </main>
       <Footer />
+      <div className="copyright">
+        <p>Copyright &copy 2023 Jiu Jitsu Universum</p>
+      </div>
       <BackToTopButton />
     </div>
   );

@@ -128,6 +128,16 @@ header {
     }
 }
 
+.copyright {
+    background-color: $color-bg-primary--darker;
+    text-align: center;
+    padding: 10px 0 40px 0;
+
+    & p {
+        margin: 0;
+    }
+}
+
 @media (max-width: 1899px) {
     .text-holder{
         display: none;
@@ -165,6 +175,13 @@ header {
            }
         }
 }
+
+.copyright {
+
+    & p {
+        font-size: 15px;
+    }
+}
 }
 
 //iPads, tablets
@@ -197,22 +214,30 @@ header {
            }
         }
 }
+
+.copyright {
+
+    & p {
+        font-size: 12px;
+    }
+}
 }
 
 //mobile
 @media screen and  (max-width: 480px) {
-    .quotesContent{
-        display: block;
-        margin: 5rem 4rem;
-
-        & .quote {
-            padding: 5px;
-            & h2 {
-                font-size: 15px;
+    .quotesContent {
+            display: block;
+            margin: 5rem 4rem;
+    
+            & .quote {
+                padding: 5px;
+    
+                & h2 {
+                    font-size: 15px;
+                }
             }
         }
-    }
-
+    
         .video-holder {
             &__play {
                 &-video {
@@ -224,11 +249,20 @@ header {
             &__close {
                 width: 25px;
                 height: 25px;
-               & .fa-2xl {
-                 font-size: 2rem !important;
-               }
+    
+                & .fa-2xl {
+                    font-size: 2rem !important;
+                }
             }
-}
+        }
+
+    .copyright {
+
+        & p {
+            font-size: 10px;
+        }
+    }
+
 
 }
 
