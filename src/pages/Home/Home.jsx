@@ -13,9 +13,7 @@ import { faCirclePlay, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Home.styles.scss";
 import { useState } from "react";
 import ReactPlayer from "react-player";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
-//import { useRef } from "react";
-//import { useEffect } from "react";
+import { lock, unlock } from "tua-body-scroll-lock";
 
 export function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -30,7 +28,7 @@ export function Home() {
     setShowVideo(false);
   };
 
-  showVideo ? disableBodyScroll(document) : enableBodyScroll(document);
+  showVideo ? lock(document) : unlock(document);
 
   return (
     <div className="app">
