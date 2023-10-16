@@ -155,7 +155,7 @@
     .hero {
         &__text{
             &-head {
-                font-size: 35px;
+                font-size: 35px !important;
             }
         }
     }
@@ -165,10 +165,10 @@
     .hero {
         &__text{
             &-head {
-                font-size: 28px;
+                font-size: 28px !important;
             }
             &-content {
-                font-size: 18px;
+                font-size: 18px !important;
             }
         }
     }
