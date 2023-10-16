@@ -14,6 +14,7 @@ export function Menu() {
       <a href="#naslovna">
         <Logo className="logo_icon" />
       </a>
+      <h1>JIU JITSU UNIVERSUM OSIJEK</h1>
       <span>
         <i
           className={sideBar ? "fas fa-times" : "fas fa-bars"}

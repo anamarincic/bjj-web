@@ -27,6 +27,9 @@ export function Footer() {
             <FontAwesomeIcon icon={faInstagram} size="xl"></FontAwesomeIcon>
           </a>
         </div>
+        <p className="footer-contact">
+          <a href="tel:+385995187643">+385995187643</a>
+        </p>
       </div>
       <div className="">
         <h3>Radno vrijeme</h3>

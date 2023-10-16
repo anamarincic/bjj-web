@@ -8,7 +8,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener1.jpg")}
-            alt="trener jjk universum"
+            alt="trener Jjk Universuma Nikola Morača"
             className="description__content-img"
           />
           <div className="team">
@@ -19,7 +19,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener2.jpg")}
-            alt="trener dva jjk universum"
+            alt="trener Jjk Universum Dominik Livaja"
             className="description__content-img"
           />
           <div className="team">
@@ -30,7 +30,7 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener3.jpg")}
-            alt="trener tri jjk universum"
+            alt="trener Jjk Universum Siniša Vidaković"
             className="description__content-img"
           />
           <div className="team">
