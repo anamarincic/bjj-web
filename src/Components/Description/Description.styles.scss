@@ -21,11 +21,13 @@
         &-team{
             margin-right: 10rem;
             line-height: 0.2rem;
-            
+            &:nth-last-child(1) {
+                margin-right: 5rem;
+            }
         }
         &-img {
-            width: 400px;
-            height: 490px;
+            width: 280px;
+            height: 390px;
             object-fit: cover;
         }
     }
@@ -36,7 +38,7 @@
     transform-origin: 0 top;
     transform: rotate(90deg);
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 55px;
 
     & .team__details {
         text-transform: uppercase;
@@ -55,6 +57,18 @@
     }
 }
 
+//large
+
+@media screen and (min-width: 1020px) and (max-width: 1870px) {
+    .description {
+        &__content {
+            &-team:nth-last-child(1) {
+                margin-right: 10rem;
+            }
+        }
+    }
+}
+
 //desktops
 
 @media screen and (min-width: 1025px) and (max-width: 1819px){
@@ -66,6 +80,9 @@
                 margin-right: 40px;
             }
             &-team:nth-child(2) {
+                margin-right: 40px;
+            }
+            &-team:nth-child(3) {
                 margin-right: 40px;
             }
             &-team:nth-last-child(1) {
@@ -88,6 +105,47 @@
         }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1330px) {
+    .description {
+        &__content {
+            &-team:nth-child(1) {
+                margin-right: 0px;
+            }
+
+            &-team:nth-child(2) {
+                margin-right: 0px;
+            }
+
+            &-team:nth-child(3) {
+                margin-right: 0px;
+            }
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            align-content: center;
+            column-gap: 50px;
+
+            &-team {
+                margin: 0;
+            }
+
+            &-img {
+                width: 350px;
+                height: 400px;
+            }
+        }
+
+        .team {
+            position: relative;
+            transform: rotate(360deg);
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
+}
 //tablets, iPads, small screens and laptops
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -95,7 +153,10 @@
         @include display(flex, column, nowrap, center);
         align-content: center;
         &-team {
-            margin: 0;
+            margin: auto;
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
         }
         &-img {
             width: 350px;
@@ -118,13 +179,16 @@
     .description {
         text-align: center;
 
-        .description__content {
+        &__content {
             margin: 0;
             @include display(flex, column, nowrap, center);
             text-align: center;
 
             &-team {
-                margin: 0;
+                margin: auto;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
 
                 & .team {
                     position: relative;

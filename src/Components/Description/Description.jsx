@@ -30,6 +30,17 @@ export function Description() {
         <div className="description__content-team">
           <img
             src={require("../../images/description/trener3.jpg")}
+            alt="trener Jjk Universum Svebor Kovačić"
+            className="description__content-img"
+          />
+          <div className="team">
+            <p className="team__details">Trener početničke grupe</p>
+            <h3 className="team__name">Svebor Kovačić</h3>
+          </div>
+        </div>
+        <div className="description__content-team">
+          <img
+            src={require("../../images/description/trener4.jpg")}
             alt="trener Jjk Universum Siniša Vidaković"
             className="description__content-img"
           />
